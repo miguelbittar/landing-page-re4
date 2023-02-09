@@ -15,289 +15,103 @@
     box-sizing: border-box;
     font-family: 'EB Garamond', serif;
     font-family: 'Teko', sans-serif;
+    color: var(--color03);
 }
 
 body {
     background-color: var(--color01);
 }
 
-main {
-    max-width: 600px;
-    margin: auto;   
-}
-
-
-/*  HEADER ----------------------------------------------------------  */
-
-#header {
-    position: relative;
+header.site-header {
     background: url(../image/bg-small.jpg) no-repeat center;
     background-size: cover;
     height: 95vh;
 }
 
-header#header .logo {
-    position: absolute;
-    width: 100px;
-    height: 50px;
-    left: 10px;
-    top: 15px;
-}
-
-header#header .container-title-info {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    align-items: center;
+div.container {
+    max-width: 600px;
     height: 100vh;
-    width: 100%;
+    background-color: #AD212A;
+    margin: 0 auto;
 }
 
-div.container-title-info .title-plataform {
-    display: flex;
-    position: absolute;
-    align-items: end;
-    list-style-type: none;
-    height: 85vh;    
-    margin-right: 10px;    
-    left: 30px;
+/*  MENU - TOGGLE    */
+
+.toggle-menu-header {
+    background: url(../image/menu.png) no-repeat center;
+    background-size: cover;
+    filter: invert(1);
+    height: 35px;
+    width: 35px;
+    right: 15px;
+    top: 2px;
+    margin: 12px 20px 0px 0px;
+    cursor: pointer;
 }
 
-div.container-title-info .title-plataform li img {
-    width: 55px;
-    margin-left: 15px;
+.toggle-menu-header:hover {
+    opacity: 0.5;
 }
 
-
-header#header .re4-logo {
-    height: 50px;
-    width: 290px;
+.toggle-menu-header.active {
+    background: url(../image/close.png) no-repeat;
+    background-size: cover;
+    height: 35px;
+    width: 35px;
+    right: 15px;
+    top: 2px;
+    margin: 12px 20px 0px 0px;   
 }
 
-header#header .title-info {
-    position: absolute;
-    display: flex;
-    color: var(--color05);
-    width: 100%;
-    height: 100%;
-    justify-content: center;
-    align-items: center;
-    top: 75px;
-    font-size: 20px;   
-    text-shadow: 0 0 10px rgba(0, 0, 0, 0.39);
-    font-weight: 400;
+/*                                */
+
+.menu-icon {
+    font-size: 35px !important;
 }
 
-strong {
-    color: var(--color04);
-    font-weight: 600;
-    font-size: 25px;
-}
-
-header#header .title-info .p-title-release {
-    background-color: #111111de;
-    padding: 0 20px 0 20px;
-    border-radius: 5px;
-}
-
-header#header .navigation-header {
+.site-header-menu {
     position: fixed;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: var(--color01);    
-    backdrop-filter: blur(1000px);
-    width: 100vw;
-    height: 100vh;
-    color: var(--color05);
-    font-size: 35px;
-    text-transform: uppercase;
-    right: -110%;
-    transition: 0.5s ease;
-    opacity: 0.98;
-    z-index: 100;
-}
-
-header#header .navigation-header.active {
-    right: 0;
     background-color: var(--color01);
-    
-}
-
-.toggle {
-    background-image: url(../image/menu.png);
-    height: 50px;
-    width: 50px;
-    position: fixed;
-    filter: invert(1);
-    right: 30px;
-    top: 20px;
-    cursor: pointer;
-    z-index: 100;
-}
-
-.toggle.active {
-    background-image: url(../image/close.png);
-    filter: invert(1);
-    width: 50px;
-    height: 50px;
-    top: 20px;
-    right: 30px;
-    z-index: 101;
-}
-
-.toggle:hover {
-    opacity: 0.5;
-}
-
-.material-icons {
-    color: var(--color05);
-    }
-
-.trailer-header-container {
-    position: fixed;
-    background-color: #111111fb;
-    z-index: 102;
     height: 100vh;
     width: 100vw;
-    display: none;
+    font-size: 50px;
+    opacity: 0.95;
+    left: 100%;
+    transition: 0.5s ease;
 }
 
-.close {
-    position: fixed;
-    color: var(--color05);
-    font-size: 50px !important; 
-    right: 30px;
-    top: 20px;
-    cursor: pointer;
-}
-
-.close:hover {
-    opacity: 0.5;
-}
-
-.trailer-header-container.active {
-    display: block;
-}
-
-
-.re4-trailer-header {
-    position: relative;
-    top: 140px;
-    width: 100%;
-    height: 50%;
-}
-
-iframe {
-    position: absolute;    
-    width: 100%;
-    height: 100%;    
-}
-
-header#header .navigation-header .menu-header {
+.site-header-list {
     display: flex;
     flex-direction: column;
-    list-style-type: none;
+    justify-content: center;
     align-items: center;
+    width: 100vw;
+    height: 100vh;
 }
 
-header#header .navigation-header .menu-header li {
-    padding: 5px;
-}
-
-header#header .navigation-header .menu-header li:hover {
+.site-header-itens:hover {
     color: var(--color04);
     cursor: pointer;
 }
 
-.trailer-button-header {
-    position: absolute;
+.site-header-menu.active {
+    background-color: var(--color01);
+    background-size: 30px;
+    display: block;
+    cursor: pointer;
+    left: 0;
+}
+
+.site-header-itens {    
+    list-style: none;
+}
+.site-header {
+    position: relative;
     display: flex;
-    left: 106px;
-    bottom: 90px;
-    text-align: center;
-    border: 2px solid var(--color05);
-    width: 150px;
-    padding: 2px 0 0 2px;
-    border-radius: 6px;
-    background-color: #111111a1;
-    cursor: pointer;
-    transition: 0.3s ease;
+    justify-content: space-between;
 }
 
-.trailer-button-header:hover :nth-child(n) {
-    color: var(--color04);
+.site-logo-header {
+    width: 140px;
+    margin-left: 20px;
 }
-
-.trailer-button-header:hover {
-    border-color: var(--color04);
-}
-
-.cta-trailer-header {
-    display: inline-block;
-    font-size: 1em;
-    font-weight: 500;
-    color: var(--color05);
-    letter-spacing: 2px;
-    padding-top: 6px;   
-    text-transform: uppercase; 
-}
-
-.play-icon {
-    display: inline-block;
-    color: var(--color05);
-    margin: 3px;
-}
-
-/* MEDIA LANDSCAPE */
-
-
-@media only screen and (orientation: landscape) {
-    .trailer-header-container {
-        position: fixed;
-        background-color: #111111fb;
-        z-index: 102;
-        height: 100vh;
-        width: 100vw;
-        display: none;
-    }
-
-    iframe {
-        width: 80vw;
-        height: 80vh;
-        top: -100px;
-        left: 62px;
-    }
-
-    .close {
-        font-size: 40px !important;
-        right: 11px;
-        top: 8px;
-    }
-
-
-
-}
-
-
-
-
-
-
-
-/* STORY ------------------------------------------------------------------------------------------- */
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

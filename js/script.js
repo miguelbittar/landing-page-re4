@@ -1,11 +1,8 @@
 function toggleMenu(){
-    const menuToggle = document.querySelector('.toggle');
-    const navigation = document.querySelector('.navigation-header');
+    const menuToggle = document.querySelector('.toggle-menu-header');
+    const navToggle = document.querySelector('.site-header-menu');
     menuToggle.classList.toggle('active')
-    navigation.classList.toggle('active')
+    navToggle.classList.toggle('active')
 }
 
-function toggleTrailer(){   
-    const trailerToggle = document.querySelector('.trailer-header-container');  
-    trailerToggle.classList.toggle('active')
-}
+
