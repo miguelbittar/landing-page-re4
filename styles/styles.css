@@ -65,7 +65,7 @@ div.container-title-info .title-plataform li img {
 
 header#header .re4-logo {
     height: 50px;
-    width: 250px;
+    width: 290px;
 }
 
 header#header .title-info {
@@ -89,9 +89,9 @@ strong {
 }
 
 header#header .title-info .p-title-release {
-    background-color: #111111f1;
+    background-color: #111111de;
     padding: 0 20px 0 20px;
-    border-radius: 10px;
+    border-radius: 5px;
 }
 
 header#header .navigation-header {
@@ -144,6 +144,32 @@ header#header .navigation-header.active {
     opacity: 0.5;
 }
 
+.trailer-header-container {
+    position: fixed;
+    background-color: #111111fb;
+    z-index: 102;
+    height: 100vh;
+    width: 100vw;
+    display: none;
+}
+
+.trailer-header-container.active {
+    display: block;
+}
+
+.re4-trailer-header {
+    position: relative;
+    top: 140px;
+    width: 100%;
+    height: 50%;
+}
+
+iframe {
+    position: absolute;    
+    width: 100%;
+    height: 100%;    
+}
+
 header#header .navigation-header .menu-header {
     display: flex;
     flex-direction: column;
@@ -158,6 +184,45 @@ header#header .navigation-header .menu-header li {
 header#header .navigation-header .menu-header li:hover {
     color: var(--color04);
     cursor: pointer;
+}
+
+.trailer-button-header {
+    position: absolute;
+    display: flex;
+    left: 80px;
+    bottom: 90px;
+    text-align: center;
+    border: 2px solid var(--color05);
+    width: 150px;
+    padding: 2px 0 0 2px;
+    border-radius: 6px;
+    background-color: #111111a1;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.trailer-button-header:hover :nth-child(n) {
+    color: var(--color04);
+}
+
+.trailer-button-header:hover {
+    border-color: var(--color04);
+}
+
+.cta-trailer-header {
+    display: inline-block;
+    font-size: 1em;
+    font-weight: 500;
+    color: var(--color05);
+    letter-spacing: 2px;
+    padding-top: 6px;   
+    text-transform: uppercase; 
+}
+
+.play-icon {
+    display: inline-block;
+    color: var(--color05);
+    margin: 3px;
 }
 
 
