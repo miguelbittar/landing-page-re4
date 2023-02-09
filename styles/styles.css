@@ -54,7 +54,8 @@ div.container-title-info .title-plataform {
     position: absolute;
     align-items: end;
     list-style-type: none;
-    height: 85vh;        
+    height: 85vh;    
+    margin-right: 10px;    
 }
 
 div.container-title-info .title-plataform li img {
@@ -150,7 +151,6 @@ header#header .navigation-header.active {
 
 .trailer-header-container {
     position: fixed;
-  /*  background: url(../image/close-white.png) no-repeat right 50px top 20px;*/
     background-color: #111111fb;
     z-index: 102;
     height: 100vh;
@@ -168,7 +168,7 @@ header#header .navigation-header.active {
 }
 
 .close:hover {
-    color: var(--color04);
+    opacity: 0.5;
 }
 
 .trailer-header-container.active {
@@ -208,7 +208,7 @@ header#header .navigation-header .menu-header li:hover {
 .trailer-button-header {
     position: absolute;
     display: flex;
-    left: 80px;
+    left: 104px;
     bottom: 90px;
     text-align: center;
     border: 2px solid var(--color05);
