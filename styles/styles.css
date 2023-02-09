@@ -144,8 +144,13 @@ header#header .navigation-header.active {
     opacity: 0.5;
 }
 
+.material-icons {
+    color: var(--color05);
+    }
+
 .trailer-header-container {
     position: fixed;
+  /*  background: url(../image/close-white.png) no-repeat right 50px top 20px;*/
     background-color: #111111fb;
     z-index: 102;
     height: 100vh;
@@ -153,9 +158,23 @@ header#header .navigation-header.active {
     display: none;
 }
 
+.close {
+    position: fixed;
+    color: var(--color05);
+    font-size: 50px !important; 
+    right: 30px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.close:hover {
+    color: var(--color04);
+}
+
 .trailer-header-container.active {
     display: block;
 }
+
 
 .re4-trailer-header {
     position: relative;
