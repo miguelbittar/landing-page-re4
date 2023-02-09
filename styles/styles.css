@@ -63,7 +63,7 @@ div.container {
     margin: 12px 20px 0px 0px;   
 }
 
-/*                                */
+/*HEADER                  */
 
 .menu-icon {
     font-size: 35px !important;
@@ -114,4 +114,25 @@ div.container {
 .site-logo-header {
     width: 140px;
     margin-left: 20px;
+}
+
+.title-header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 95vh;
+}
+
+.title-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 95vh;
+}
+
+.title-logo {
+    position: absolute;
+    width: 450px;
+    height: 70px;
 }
