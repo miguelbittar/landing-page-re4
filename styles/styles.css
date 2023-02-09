@@ -60,6 +60,7 @@ div.container-title-info .title-plataform {
     list-style-type: none;
     height: 85vh;    
     margin-right: 10px;    
+    left: 30px;
 }
 
 div.container-title-info .title-plataform li img {
@@ -212,7 +213,7 @@ header#header .navigation-header .menu-header li:hover {
 .trailer-button-header {
     position: absolute;
     display: flex;
-    left: 104px;
+    left: 106px;
     bottom: 90px;
     text-align: center;
     border: 2px solid var(--color05);
