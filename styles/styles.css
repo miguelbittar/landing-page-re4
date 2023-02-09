@@ -258,7 +258,7 @@ header#header .navigation-header .menu-header li:hover {
         background-color: #111111fb;
         z-index: 102;
         height: 100vh;
-        max-width: 650px;
+        width: 100vw;
         display: none;
     }
 
