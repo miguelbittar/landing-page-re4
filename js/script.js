@@ -5,4 +5,17 @@ function toggleMenu(){
     navToggle.classList.toggle('active')
 }
 
+function trailerModal(){
+    const modalTrailer = document.querySelector('.re4-trailer-modal'); 
+    modalTrailer.classList.toggle('active')   
+}    
+
+
+
+
+
+
+
+
+
 

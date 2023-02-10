@@ -214,7 +214,6 @@ div.container {
     transform: scale(0.96);
 }
 
-
 .play-icon, .cta-watch-trailer {
     color: var(--color05);
     text-transform: uppercase;
@@ -225,4 +224,51 @@ div.container {
 
 .cta-watch-trailer {
     padding: 2px 0px 0px 0px;
+}
+
+/*------Modal Trailer-------------*/
+
+.re4-trailer-modal {
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--color01);
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 100%;
+    z-index: 101;
+    cursor: pointer;
+}
+
+.trailer-header {
+    border: 3px solid var(--color04);
+    border-radius: 5px;
+    box-shadow: 0 0 10px #111111a1;
+    position: absolute;
+    width: 90vw;
+
+}
+
+.re4-trailer-modal.active {
+    background: url(../image/close-white.png) no-repeat right 25px top 15px;
+    background-size: 30px;
+    background-color: #111111e5;
+    backdrop-filter: blur(6px);
+    left: 0;
+}
+
+
+
+@media (orientation: landscape) {
+    .trailer-header {
+        width: 75vw;
+        height: 75vh;
+        border: 3px solid var(--color04);
+        border-radius: 5px;
+        box-shadow: 0 0 10px #111111a1;
+    }    
+
+    
 }
