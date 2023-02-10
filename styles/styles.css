@@ -23,7 +23,7 @@ body {
 }
 
 header.site-header {
-    background: url(../image/bg-small.jpg) no-repeat center;
+    background: url(../image/bg-smallest.jpg) no-repeat center;
     background-size: cover;
     height: 95vh;
 }
@@ -47,6 +47,7 @@ div.container {
     top: 2px;
     margin: 12px 20px 0px 0px;
     cursor: pointer;
+    z-index: 100;
 }
 
 .toggle-menu-header:hover {
@@ -60,7 +61,8 @@ div.container {
     width: 35px;
     right: 15px;
     top: 2px;
-    margin: 12px 20px 0px 0px;   
+    margin: 12px 20px 0px 0px;
+       
 }
 
 /*HEADER                  */
@@ -74,10 +76,11 @@ div.container {
     background-color: var(--color01);
     height: 100vh;
     width: 100vw;
-    font-size: 50px;
-    opacity: 0.95;
+    font-size: 32px;
+    opacity: 0.99;
     left: 100%;
     transition: 0.5s ease;
+    z-index: 100;
 }
 
 .site-header-list {
@@ -112,14 +115,19 @@ div.container {
 }
 
 .site-logo-header {
-    width: 140px;
+    width: 110px;
+    margin-top: 5px;
     margin-left: 20px;
 }
 
-.title-header {
+.title-head-box {
     position: absolute;
-    top: 0;
-    left: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0px;
+    left: 0px;
     width: 100%;
     height: 95vh;
 }
@@ -133,6 +141,88 @@ div.container {
 
 .title-logo {
     position: absolute;
-    width: 450px;
-    height: 70px;
+    width: 280px;
+    height: 50px;
+}
+
+.title-release {
+    position: absolute;
+    bottom: 190px;
+    color: var(--color05);
+    padding: 6px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-size: 22px;
+    text-shadow: 0 0 10px #111111ab;
+}
+
+.title-release strong {
+    color: var(--color05);
+    font-size: 23px;
+    font-weight: 600;
+}
+
+.title-plataforms-box {
+    position: absolute;
+    height: 95vh;
+    width: 100%;
+}
+
+.title-plataforms {
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    list-style: none;
+    height: 95vh;
+}
+
+.title-plataforms-list {
+    width: 55px;
+    margin-right: 10px;
+}
+
+.watch-trailer-conteiner {
+    position: absolute;    
+    bottom: 120px;
+    width: 100%;
+    height: 95vh;
+    display: flex;    
+    justify-content: center;
+    align-items: end;
+}
+
+.watch-trailer-box { 
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    position: absolute;    
+    width: 145px;
+    height: 36px;
+    border: 3px solid var(--color05);
+    border-radius: 6px;
+    background-color: #1111119c;
+    box-shadow: 0 0 10px #11111179;
+    transition: .3s ease-in-out;
+}
+
+.watch-trailer-box:hover :nth-child(n) { 
+    opacity: 0.5;
+    cursor: pointer;
+}
+
+.watch-trailer-box:hover {
+    transform: scale(0.96);
+}
+
+
+.play-icon, .cta-watch-trailer {
+    color: var(--color05);
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-right: 5px;
+    letter-spacing: 1px;
+}
+
+.cta-watch-trailer {
+    padding: 2px 0px 0px 0px;
 }
