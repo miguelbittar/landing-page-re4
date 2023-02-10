@@ -1,0 +1,69 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Teko:wght@300;400;500;600;700&display=swap');
+
+:root {
+    --color05: #fdfcfc;
+    --color04: #AD212A;
+    --color03: #7c7c7c;
+    --color02: #363535;
+    --color01: #111111;
+}
+
+@media screen and (min-width: 768px) {
+
+    div.container {
+        max-width: 768px;
+        height: 100vh;
+        background-color: #AD212A;
+        margin: 0 auto;
+    }
+
+    header.site-header {
+        background: url(../image/bg-medium.jpg) no-repeat center;
+        background-size: cover;
+        height: 95vh;
+    }
+
+    .title-plataforms-box {
+        height: 735px;
+        min-width: 768px;
+    }
+
+    .title-box {
+        position: absolute;
+        align-items: end;
+        bottom: 150px;
+    }
+
+    .title-head-box {
+        min-width: 768px;
+    }
+
+    .title-logo {
+        position: absolute;
+        width: 650px;
+        height: 100px;
+    }
+
+    .watch-trailer-conteiner {
+        bottom: 90px;
+        right: 254px;
+        justify-content: center;
+        min-width: 768px;
+    }
+
+    .title-release {
+        left: 500px;
+        bottom: 85px;        
+    }
+
+    .title-release strong {
+        color: var(--color04);
+    }
+
+    
+
+
+
+
+}
