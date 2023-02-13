@@ -1,5 +1,14 @@
 @charset "UTF-8";
+
+/*
+  * typography
+*/    
+
 @import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Teko:wght@300;400;500;600;700&display=swap');
+
+/*
+  * My config
+*/
 
 :root {
     --color05: #fdfcfc;
@@ -7,13 +16,107 @@
     --color03: #7c7c7c;
     --color02: #363535;
     --color01: #111111;
+
+    --fs-1: 54px;
+    --fs-2: 34px;
+    --fs-3: 30px;
+    --fs-4: 26px;
+    --fs-5: 22px;
+    --fs-6: 20px;
+    --fs-7: 18px;
+    --fs-8: 15px;
+    --fs-9: 14px;
+    --fs-10: 13px;
+    --fs-11: 12px;
+
+    --fw-400: 400;
+    --fw-500: 500;
+    --fw-700: 700;
+
+    /**
+    * transition
+    */
+
+    --transition-1: 0.15s ease-in-out;
+    --transition-2: 0.15s ease-in;
+    --transition-3: 0.25s ease-out;
+
+    /**
+    * spacing
+    */
+
+    --section-padding: 60px;
+
+    /**
+    * clip path
+    */
+
+    --polygon-1: polygon(90% 0, 100% 34%, 100% 100%, 10% 100%, 0 66%, 0 0);
+    --polygon-2: polygon(0 0, 100% 0%, 82% 100%, 0% 100%);
+    --polygon-3: polygon(0 0, 100% 0%, 100% 100%, 18% 100%);
+    --polygon-4: polygon(96% 0, 100% 36%, 100% 100%, 4% 100%, 0 66%, 0 0);
+
 }
 
-* {
+
+
+/*
+    Reset
+*/
+
+*, *::before, *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'EB Garamond', serif;
     font-family: 'Teko', sans-serif;
     color: var(--color05);
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+a,
+img, 
+span, 
+input, 
+button,
+ion-icon {
+    display: block;
+}
+
+button, a {
+    cursor: pointer;
+}
+
+html {
+    scroll-behavior: smooth;
+    height: 2500px;
+}
+
+body {
+    overflow-x: hidden;
+    background: var(--color01);
+}
+
+body.active {
+    overflow-y: hidden;
+}
+
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scroll-bar-track {
+    background: var(--color01);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--color04);
+    border-radius: 10px;
 }
