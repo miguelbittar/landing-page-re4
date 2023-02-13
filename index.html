@@ -7,78 +7,53 @@
     <title>Resident Evil 4 | CAPCOM </title>
     <link rel="icon" type="image/x-icon" href="image/fav-capcom.png">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="stylesheet" href="styles/style-tablet.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
-<body>    
-    
-        <header class="site-header">
+<body>  
 
-            <div class="site-logo">
-                <img class="site-logo-header" src="image/logo.png" alt="Capcom">
+    <header id="header">
+
+        <div class="header-menu">
+            <div class="logo-container">
+                <img class="logo-capcom" src="image/logo-small.png" alt="Capcom">
             </div>
 
-            <nav class="site-header-menu">
-                <ul class="site-header-list">
-                    <li class="site-header-itens">Home</li>
-                    <li class="site-header-itens">Story</li>
-                    <li class="site-header-itens">Characters</li>
-                    <li class="site-header-itens">Zombies</li>
-                    <li class="site-header-itens">Weapons</li>
-                    <li class="site-header-itens">Gallery</li>
+            <div class="toggle-menu" onclick="toggleMenu()"></div>
+
+            <nav class="navigation">
+                <ul class="navigation-ul">
+                    <li>Home</li>
+                    <li>Story</li>
+                    <li>Characters</li>
+                    <li>Reviews</li>
+                    <li>Gallery</li>
                 </ul>
             </nav>
+        </div>    
+    </header>      
         
-            <div class="toggle-menu-header" onclick="toggleMenu()"></div>
-        </header>    
+         
+
     
 
+   
+
+
     <div class="container">
-        <main class="main">
-
-            <section class="title-head-box">
-                <div class="title-header">
-                    <h1 class="title-box">
-                        <img class="title-logo" src="image/re4-logo.png" alt="Resident Evil 4">
-                    </h1>
-                </div>
-                
-                <p class="title-release">
-                    Available <strong>March 24, 2023</strong>
-                </p>
-
-                <div class="title-plataforms-box">
-                    <ul class="title-plataforms">
-                        <li><img class="title-plataforms-list" src="image/ps5_b.png" alt="Playstation 5"></li>
-                        <li><img class="title-plataforms-list" src="image/ps4_b.png" alt="Playstation 4"></li>
-                        <li><img class="title-plataforms-list" src="image/xboxxs_b.png" alt="Xbox Series S"></li>
-                        <li><img class="title-plataforms-list" src="image/steam_b.png" alt="Steam"></li>                
-                    </ul>    
-
-                    <div class="watch-trailer-conteiner">
-                        <div class="watch-trailer-box"  onclick="trailerModal()">
-                            <span class="material-symbols-outlined play-icon">
-                                play_circle
-                            </span>
-                        
-                            <p class="cta-watch-trailer">Watch Trailer</p>                            
-                        </div>
-                    </div>
-
-                    <div class="re4-trailer-modal" onclick="trailerModal()">
-                        <iframe class="trailer-header" src="https://www.youtube.com/embed/E69tKrfEQag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                    </div>
-
-                </div>
-            </section>
         
-
-
-
-        </main>
+            <main id="main-content">
+                <section>
+        
+        
+                </section>
+        
+            </main>
     </div>
 
 
+
+
+    
 
  <script src="js/script.js"></script>
     

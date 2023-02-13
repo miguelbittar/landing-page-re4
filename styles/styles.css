@@ -19,256 +19,106 @@
 }
 
 body {
-    background-color: var(--color01);
+    background: var(--color03);
 }
 
-header.site-header {
-    background: url(../image/bg-smallest.jpg) no-repeat center;
+header#header {
+    position: relative;
+    background: url(../image/bg-small.jpg) center;
     background-size: cover;
+    width: 100%;
     height: 95vh;
 }
 
-div.container {
-    max-width: 00px;
-    height: 100vh;
-    background-color: #AD212A;
-    margin: 0 auto;
-}
-
-/*  MENU - TOGGLE    */
-
-.toggle-menu-header {
-    background: url(../image/menu.png) no-repeat center;
-    background-size: cover;
-    filter: invert(1);
-    height: 35px;
-    width: 35px;
-    right: 15px;
-    top: 2px;
-    margin: 12px 20px 0px 0px;
-    cursor: pointer;
-    z-index: 100;
-}
-
-.toggle-menu-header:hover {
-    opacity: 0.5;
-}
-
-.toggle-menu-header.active {
-    background: url(../image/close.png) no-repeat;
-    background-size: cover;
-    height: 35px;
-    width: 35px;
-    right: 15px;
-    top: 2px;
-    margin: 12px 20px 0px 0px;
-       
-}
-
-/*HEADER                  */
-
-.menu-icon {
-    font-size: 35px !important;
-}
-
-.site-header-menu {
-    position: fixed;
-    background-color: var(--color01);
-    height: 100vh;
-    width: 100vw;
-    font-size: 32px;
-    opacity: 0.99;
-    left: 100%;
-    transition: 0.5s ease;
-    z-index: 100;
-}
-
-.site-header-list {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 100vw;
-    height: 100vh;
-}
-
-.site-header-itens:hover {
-    color: var(--color04);
-    cursor: pointer;
-}
-
-.site-header-menu.active {
-    background-color: var(--color01);
-    background-size: 30px;
-    display: block;
-    cursor: pointer;
-    left: 0;
-}
-
-.site-header-itens {    
-    list-style: none;
-}
-.site-header {
-    position: relative;
+.header-menu {
+    position: absolute;
     display: flex;
     justify-content: space-between;
+    top: 0;
+    left: 0;
+    right: 0;    
 }
 
-.site-logo-header {
-    width: 110px;
-    margin-top: 5px;
-    margin-left: 20px;
+.logo-capcom {
+    margin: 10px;
 }
 
-.title-head-box {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    top: 0px;
-    left: 0px;
-    width: 100%;
-    height: 95vh;
-}
-
-.title-box {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 95vh;
-}
-
-.title-logo {
-    position: absolute;
-    width: 280px;
-    height: 50px;
-}
-
-.title-release {
-    position: absolute;
-    bottom: 190px;
-    color: var(--color05);
-    padding: 6px;
-    border-radius: 5px;
-    font-weight: 500;
-    font-size: 22px;
-    text-shadow: 0 0 10px #111111ab;
-}
-
-.title-release strong {
-    color: var(--color05);
-    font-size: 23px;
-    font-weight: 600;
-}
-
-.title-plataforms-box {
-    position: absolute;
-    height: 95vh;
-    width: 100%;
-}
-
-.title-plataforms {
-    display: flex;
-    align-items: end;
-    justify-content: center;
-    list-style: none;
-    height: 95vh;
-}
-
-.title-plataforms-list {
-    width: 55px;
-    margin-right: 10px;
-}
-
-.watch-trailer-conteiner {
-    position: absolute;    
-    bottom: 120px;
-    width: 100%;
-    height: 95vh;
-    display: flex;    
-    justify-content: center;
-    align-items: end;
-}
-
-.watch-trailer-box { 
-    display: flex;
-    justify-content: center;
-    align-items: center;    
-    position: absolute;    
-    width: 145px;
-    height: 36px;
-    border: 3px solid var(--color05);
-    border-radius: 6px;
-    background-color: #1111119c;
-    box-shadow: 0 0 10px #11111179;
-    transition: .3s ease-in-out;
-}
-
-.watch-trailer-box:hover :nth-child(n) { 
-    opacity: 0.5;
+.toggle-menu {
+    background: url(../image/menu.png) center;
+    width: 40px;
+    height: 40px;
+    margin: 10px;
+    filter: invert(1);
     cursor: pointer;
 }
 
-.watch-trailer-box:hover {
-    transform: scale(0.96);
+.toggle-menu.active {
+    position: fixed;
+    right: 0px;
+    background: url(../image/close.png);
+    width: 40px;
+    height: 40px;
+    margin: 5px 15px 5px 5px;
+    z-index: 100;
 }
 
-.play-icon, .cta-watch-trailer {
-    color: var(--color05);
-    text-transform: uppercase;
-    font-weight: 500;
-    margin-right: 5px;
-    letter-spacing: 1px;
+.toggle-menu:hover {
+    opacity: 0.7;
 }
 
-.cta-watch-trailer {
-    padding: 2px 0px 0px 0px;
-}
-
-/*------Modal Trailer-------------*/
-
-.re4-trailer-modal {
+.navigation {
     position: fixed;
     display: flex;
-    align-items: center;
     justify-content: center;
-    background-color: var(--color01);
+    align-items: center;
     height: 100vh;
-    width: 100%;
-    top: 0;
+    width: 100vw;
+    background: #111111fd;
+    backdrop-filter: blur(10px);
     left: 100%;
-    z-index: 101;
+    transition: 0.3s ease-in-out;
+}
+
+.navigation-ul {
+    list-style: none;
+    text-align: center;
+    font-size: 50px;
     cursor: pointer;
 }
 
-.trailer-header {
-    border: 3px solid var(--color04);
-    border-radius: 5px;
-    box-shadow: 0 0 10px #111111a1;
-    position: absolute;
-    width: 90vw;
-
+.navigation-ul li:hover {
+    color: var(--color04);
 }
 
-.re4-trailer-modal.active {
-    background: url(../image/close-white.png) no-repeat right 25px top 15px;
-    background-size: 30px;
-    background-color: #111111e5;
-    backdrop-filter: blur(6px);
+.navigation.active {
     left: 0;
 }
 
+.logo-container {
+    display: flex;
+    align-items: center;
+}
 
 
-@media (orientation: landscape) {
-    .trailer-header {
-        width: 75vw;
-        height: 75vh;
-        border: 3px solid var(--color04);
-        border-radius: 5px;
-        box-shadow: 0 0 10px #111111a1;
-    }    
+.container {
+    display: flex;
+    justify-content: center;
+    background-color: #fdfcfc;
+    margin: 0 auto;
+    max-width: 500px;
+    height: 100vh;
+}
 
-    
+#main-content {
+    display: flex;
+    justify-content: center;
+    background-color: #AD212A;
+    height: 100vh;
+    width: 400px;
+}
+
+section {
+    background-color: aqua;
+    height: 90vh;
+    width: 300px;
 }

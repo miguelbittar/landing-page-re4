@@ -1,6 +1,6 @@
 function toggleMenu(){
-    const menuToggle = document.querySelector('.toggle-menu-header');
-    const navToggle = document.querySelector('.site-header-menu');
+    const menuToggle = document.querySelector('.toggle-menu');
+    const navToggle = document.querySelector('.navigation');
     menuToggle.classList.toggle('active')
     navToggle.classList.toggle('active')
 }
