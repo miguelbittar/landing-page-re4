@@ -17,6 +17,8 @@
     --color02: #363535;
     --color01: #111111;
 
+    --gradient01: linear-gradient(#1b1b1b, #000);
+
     --font1: 'Teko';
     --font2: 'Garamond'
 
@@ -32,11 +34,14 @@
     color: var(--color05);
 }
 
-
 a {
     text-decoration: none;
     cursor: pointer;
     font-family: var(--font1);
+}
+
+body {
+    background: var(--color01);
 }
 
 ul {
@@ -168,7 +173,7 @@ strong {
 
 .title-logo img {
     margin-bottom: -50px;
-    width: 310px;
+    width: 295px;
 }
 
 .release-platforms {
@@ -252,5 +257,49 @@ strong {
 
 .close-ico-header-trailer:hover {
     opacity: 0.8;
+}
+
+/*   STORY
+\*-------------------------------------------------------------------------------------------*/
+
+
+section#story {
+    text-align: center;
+    background: var(--gradient01);
+}
+
+.story-bg {
+    background: url(../images/bg-2.jpg) no-repeat center;
+    background-size: cover;
+    height: 300px;
+    width: 100%;
+}
+
+.title-story {
+    font-family: var(--font1);
+    font-weight: lighter;
+    font-size: 36px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.quote-story-block {
+    text-transform: uppercase;
+    font-family: var(--font1);
+    padding: 10px;
+}
+
+.quote-story {
+    color: var(--color04);
+    text-transform: uppercase;
+    font-family: var(--font1);
+    font-size: 22px;
+}
+
+.story-text {
+    padding: 10px;
+    color: var(--color03);
+    font-family: var(--font1);
+    font-size: 20px;
 }
 
