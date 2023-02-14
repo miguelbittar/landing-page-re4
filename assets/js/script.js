@@ -15,6 +15,18 @@ function trailerModal(){
     modalTrailerClose.classList.toggle('active')   
 }    
 
+/* CHARACTER MENU */
+
+function Show1() {
+    document.getElementById('character1').style.display = "block";
+    document.getElementById('character2').style.display = "none";
+}
+
+function Show2() {
+    document.getElementById('character2').style.display = "block";
+    document.getElementById('character1').style.display = "none";
+}
+
 
 
 
