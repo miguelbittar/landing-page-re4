@@ -20,18 +20,36 @@
     --gradient01: linear-gradient(#1b1b1b, #000);
 
     --font1: 'Teko';
-    --font2: 'Garamond'
+    --font2: 'Garamond'   
 
 }
 /*
     Reset
 */
 
+::-webkit-scrollbar {
+     width: 8px; 
+}
+
+::-webkit-scrollbar-track {
+     background: var(--color02); 
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--color04);
+  border-radius: 10px;
+}
+
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     color: var(--color05);
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 a {
