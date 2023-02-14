@@ -17,106 +17,165 @@
     --color02: #363535;
     --color01: #111111;
 
-    --fs-1: 54px;
-    --fs-2: 34px;
-    --fs-3: 30px;
-    --fs-4: 26px;
-    --fs-5: 22px;
-    --fs-6: 20px;
-    --fs-7: 18px;
-    --fs-8: 15px;
-    --fs-9: 14px;
-    --fs-10: 13px;
-    --fs-11: 12px;
-
-    --fw-400: 400;
-    --fw-500: 500;
-    --fw-700: 700;
-
-    /**
-    * transition
-    */
-
-    --transition-1: 0.15s ease-in-out;
-    --transition-2: 0.15s ease-in;
-    --transition-3: 0.25s ease-out;
-
-    /**
-    * spacing
-    */
-
-    --section-padding: 60px;
-
-    /**
-    * clip path
-    */
-
-    --polygon-1: polygon(90% 0, 100% 34%, 100% 100%, 10% 100%, 0 66%, 0 0);
-    --polygon-2: polygon(0 0, 100% 0%, 82% 100%, 0% 100%);
-    --polygon-3: polygon(0 0, 100% 0%, 100% 100%, 18% 100%);
-    --polygon-4: polygon(96% 0, 100% 36%, 100% 100%, 4% 100%, 0 66%, 0 0);
+    --font1: 'Teko';
+    --font2: 'Garamond'
 
 }
-
-
-
 /*
     Reset
 */
 
-*, *::before, *::after {
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'EB Garamond', serif;
-    font-family: 'Teko', sans-serif;
     color: var(--color05);
 }
 
+
 a {
     text-decoration: none;
+    cursor: pointer;
+    font-family: var(--font1);
 }
 
-li {
+ul {
     list-style: none;
 }
 
-a,
-img, 
-span, 
-input, 
-button,
-ion-icon {
-    display: block;
-}
-
-button, a {
+button {
+    height: 30px;
+    width: 30px;
     cursor: pointer;
+    border: none;
 }
 
-html {
-    scroll-behavior: smooth;
-    height: 2500px;
+strong {
+    color: var(--color04);
+    font-weight: 700;  
+    font-size: 20px;  
 }
 
-body {
-    overflow-x: hidden;
-    background: var(--color01);
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
-body.active {
-    overflow-y: hidden;
+
+/*   NAVBAR HERO - TOGGLE
+\*-------------------------------------------------------------------------------------------*/
+
+.navbar-hero {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #242424da;
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    font-size: 40px;
+    backdrop-filter: blur(10px);
+    left: 100%;
+    z-index: 10;
+    transition: 0.4s ease-in-out;
 }
 
-::-webkit-scrollbar {
-    width: 8px;
+.navbar-hero li {
+    padding: 5px;
 }
 
-::-webkit-scroll-bar-track {
-    background: var(--color01);
+.navbar-hero li:hover a{
+    color: var(--color04);
+    transition: 0.5s ease-out;   
 }
 
-::-webkit-scrollbar-thumb {
-    background: var(--color04);
-    border-radius: 10px;
+.navbar-hero.active {
+    left: 0;
+}
+
+.toggle-navbar-close.active {
+    position: absolute;
+    top: 2px;
+    right: 2px;
+    background-color: transparent;
+    display: block;
+    font-size: 30px;
+    cursor: pointer;
+    z-index: 1000;
+}
+
+
+/*   HERO
+\*-------------------------------------------------------------------------------------------*/
+
+.hero {
+    display: flex;
+    justify-content: space-between;
+    background: var(--color01) url(../images/bg-small.jpg) no-repeat center;
+    background-size: cover;
+    height: 90vh;
+    z-index: 100;
+}
+
+.logo-hero {
+    margin: 4px 0px 0px 2px;
+}
+
+.toggle-navbar {
+    background-color: transparent;
+    z-index: 9;
+}
+
+.toggle-navbar-close {
+    display: none;
+}
+
+.toggle-navbar:hover {
+    opacity: 0.8;
+}
+
+.toggle-navbar-close:hover {
+    opacity: 0.8;
+}
+
+.menu-ico {
+    font-size: 30px;
+}
+
+/*   HEADER
+\*-------------------------------------------------------------------------------------------*/
+
+.header {
+    position: absolute;
+    top: 0;
+    display: flex;
+    justify-content: center;
+    align-items: end;
+    height: 90vh;
+    width: 100%;
+    text-align: center;   
+}
+
+
+.title-release {
+    font-size: 25px;
+    margin-bottom: 50px;
+    font-family: var(--font1);
+}
+
+
+.title-logo img {
+    margin-bottom: -50px;
+    width: 310px;
+}
+
+.release-platforms {
+    display: flex;
+    justify-content: center;
+}
+
+.release-platforms li img{
+    width: 70px;
+    padding: 5px;
 }

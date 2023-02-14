@@ -23,74 +23,67 @@
 
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
+
 <body>      
+
+    <!--
+        - #HERO
+    -->
+
+    <div class="hero">
+        <div class="logo-hero">
+            <img src="assets/images/logo.png" alt="Capcom Logo">
+        </div>
+
+        <nav class="navbar-hero">
+            <ul>
+                <li><a href="#Home">Home</a></li>
+                <li><a href="#Story">Story</a></li>
+                <li><a href="#Characters">Characters</a></li>
+                <li><a href="#Infected">Infected</a></li>     
+                <li><a href="#Gallery">Gallery</a></li>                
+            </ul>
+        </nav>
+
+        <button class="toggle-navbar" onclick="toggleMenu()">
+            <ion-icon class="menu-ico" name="menu-outline"></ion-icon>
+        </button>
+
+        <button class="toggle-navbar-close" onclick="toggleMenu()">
+            <ion-icon class="close-ico" name="close-circle-outline"></ion-icon>
+        </button>
+
+    </div>
+
 
     <!--
         - #HEADER
     -->
 
-    <header class="header">
-
-        <!--
-            - overlay
-        -->
-
-        <div class="overlay" data-overlay></div>
+   <header class="header">
 
         <div class="container">
-            <a href="#" class="logo">
-                <img src="assets/images/logo.png" alt="Capcom">
-            </a>
-            
-            <button class="nav-toggle" data-nav-open-btn>
-                <span class="material-symbols-outlined">menu</span>
-            </button>
-
-            <nav class="navbar" data-nav>
-
-                <div class="navbar-header">
-                    <a href="#" class="logo">
-                        <img src="assets/images/logo.png" alt="Capcom logo">
-                    </a>
-
-                    <button class="nav-close-btn" data-nav-close-btn>
-                        <span class="material-symbols-outlined">close</span>
-                    </button>
-
-                </div>
-
-                <ul class="navbar-list">
-
-                    <li>
-                        <a href="#" class="navbar-link">Home</a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="navbar-link">Story</a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="navbar-link">Trailers</a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="navbar-link">Characters</a>
-                    </li>
-
-                    <li>
-                        <a href="#" class="navbar-link">Reviews</a>
-                    </li>
-
+            <div class="title-header">
+                <h1 class="title-logo"><img src="assets/images/re4-logo-small.png" alt="Resident Evil 4"></h1>
+                <p class="title-release">Available <strong>March 24, 2023</strong></p>
+                <ul class="release-platforms">
+                    <li><img src="assets/images/ps5_b.png"></li>
+                    <li><img src="assets/images/ps4_b.png"></li>
+                    <li><img src="assets/images/xboxxs_b.png"></li>
+                    <li><img src="assets/images/steam_b.png"></li>
                 </ul>
+            </div>
 
-                <ul class="nav-social-list"></ul>
 
-            </nav>
+
 
         </div>
 
-    </header>
 
+
+
+
+   </header>
 
 
 
@@ -114,6 +107,13 @@
         - custom js link
     -->
  <script src="assets/js/script.js"></script>
+
+ <!-- 
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
     
 </body>
 </html>
