@@ -25,6 +25,16 @@
 </head>
 
 <body>      
+    
+    <!--
+                MODAL
+            -->
+
+            <div class="header-trailer-modal">
+                <ion-icon class="close-ico-header-trailer" name="close-circle-outline"  onclick="trailerModal()"></ion-icon> 
+
+                <iframe class="header-trailer-iframe" src="https://www.youtube.com/embed/E69tKrfEQag" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
 
     <!--
         - #HERO
@@ -67,9 +77,9 @@
                 <h1 class="title-logo"><img src="assets/images/re4-logo-small.png" alt="Resident Evil 4"></h1>
                 <p class="title-release">Available <strong>March 24, 2023</strong></p>
 
-                <button class="header-trailer">
+                <button class="header-trailer" onclick="trailerModal()">
                     <ion-icon class="play-ico" name="play"></ion-icon>
-                    <p>Watch Trailer</p>
+                    <p>Watch Trailer</p>                                     
                 </button>
 
                 <ul class="release-platforms">
@@ -79,6 +89,12 @@
                     <li><img src="assets/images/steam_b.png"></li>
                 </ul>
             </div>
+
+            
+
+           
+
+
         </div>
    </header>
    

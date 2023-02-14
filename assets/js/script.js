@@ -9,10 +9,11 @@ function toggleMenu(){
 }
 
 function trailerModal(){
-    const modalTrailer = document.querySelector('.re4-trailer-modal'); 
+    const modalTrailer = document.querySelector('.header-trailer-modal'); 
+    const modalTrailerClose = document.querySelector('.close-ico-header-trailer'); 
     modalTrailer.classList.toggle('active')   
+    modalTrailerClose.classList.toggle('active')   
 }    
-
 
 
 
