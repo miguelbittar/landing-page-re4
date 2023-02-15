@@ -327,16 +327,15 @@ section#story {
 
 section#characters {
     display: flex;
-    flex-direction: column;
-    align-items: center;
-    height: 100vh;
+    flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .btn-characters {
     background: url(../images/btn-thumbs/btn-small-1.jpg) no-repeat center;
     background-size: cover;
-    width: 280px;
-    height: 150px;
+    width: 80px;
+    height: 40px;
     margin: 15px 5px;
     transition: 0.3s ease-in-out;
 
@@ -349,29 +348,10 @@ section#characters {
 
 #character1 {
     display: none;
-    height: 100px;
-    width: 50px;
-    background-color: white;
+    height: 400px;
+    width: 90%;
+    margin: auto;
+    background: var(--color03);
 }
 
-#character2 {
-    display: none;
-    height: 100px;
-    width: 50px;
-    background-color: rebeccapurple;
-}
-
-#character3 {
-    display: none;
-    height: 100px;
-    width: 50px;
-    background-color: rebeccapurple;
-}
-
-#character4 {
-    display: none;
-    height: 100px;
-    width: 50px;
-    background-color: rebeccapurple;
-}
 
