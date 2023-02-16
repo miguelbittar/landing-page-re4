@@ -96,7 +96,7 @@ body {
 header#header {
     background: url(../images/bg-small.jpg) no-repeat center;
     background-size: cover;
-    height: 90vh;
+    height: 95vh;
     width: 100vw;
 }
 
@@ -225,7 +225,8 @@ header#header {
 .titles-plataform {
     display: flex;   
     align-items: end;
-    padding-top: 4rem;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
 }
 
 .titles-plataform li img {
