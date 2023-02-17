@@ -1,0 +1,50 @@
+@charset "UTF-8";
+
+/*
+  * typography
+*/    
+
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&family=Teko:wght@300;400;500;600;700&display=swap');
+
+/*
+  * My config
+*/
+
+:root {
+    --color05: #fdfcfc;
+    --color04: #AD212A;
+    --color03: #7c7c7c;
+    --color02: #2f323a; 
+    --color01: #111111;
+
+    --gradient01: linear-gradient(#1b1b1b, #000);
+
+    --font1: 'Teko';
+    --font2: 'Garamond'   
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    /* Header Titles */
+
+    header#header {
+        background: url(../images/bg-1.jpg) no-repeat center top;
+        background-size: cover;
+    }
+
+    .hero-nav {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        position: fixed; 
+        background: #2f323adc;
+        backdrop-filter: blur(0.5rem);
+        height: 100%;
+        width: 65%;       
+        transition: all 0.3s ease-in-out;
+        z-index: 10;
+        box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.500);
+    }
+
+}    
